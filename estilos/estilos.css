@@ -212,7 +212,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
-    border: 1px solid;
+    border: 1px #005900ff solid;
     width: 90%;
     padding: 50px;
     margin-top: 50px;
@@ -297,4 +297,24 @@ footer .div_footer a:hover {
 
 footer .reservado {
     text-align: center;
+}
+
+/*Para estilizar página de mantenimiento*/
+.alert-container{
+    border-radius: 1em;
+    border-style: solid;
+    border-color:  #005900ff;
+    border-width: 1px;
+    padding-inline: 2em;
+    margin-inline: 30%;
+    margin-block: 10%;
+    background-color: #f2f7ecff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#halert{
+    margin-top: 1em;
 }
