@@ -18,16 +18,23 @@ rel="stylesheet">
 
 <form class="form-container">
 
-    <legend>Inicie sesión</legend>
-   
-    <input type="text" id="fuser" name="fuser" placeholder="Email"><br>
+    <legend>Registro</legend></br>
+    <label for="fname">Nombre</label></br>
+    <input type="text" id="fname" name="fname" placeholder="Nombre"></br></br>
 
+    <label for="fsurname">Apellido/s</label></br>
+    <input type="text" id="fsurname" name="fsurname" placeholder="Apellidos"></br></br>
 
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="16" max="100" required></br></br>
 
+    <label for="femail">Correo</label></br>
+    <input type="text" id="femail" name="femail" placeholder="Correo"></br></br>
 
-    <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña"><br>
-    <input type="submit" value="Enviar">
-    <input type="submit" value="He olvidado mi contraseña...">
+    <label for="fpwd">Contraseña</label></br>
+    <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña"></br></br>
+    <input type="submit" value="Registrar">
+
 
 </form>
 
