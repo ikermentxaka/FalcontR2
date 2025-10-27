@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALCONT</title>
+
+    <!-- Conexión previa con Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Enlace a la fuente Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/trabaja.css">
+</head>
+
+<body>
+
+
+    <main class="main">
+
+        <div class="form-container">
+            <h2>Únete a nuestro Voluntariado</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="16" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="intereses">Áreas de interés</label>
+                    <select id="intereses" name="intereses" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="educacion"></option>
+                        <option value="medioambiente"></option>
+                        <option value="social"></option>
+                        <option value="salud"></option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos por qué quieres unirte..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar solicitud</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

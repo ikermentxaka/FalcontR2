@@ -1,0 +1,144 @@
+/* Aplicando Poppins a todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f2f7ecff; 
+  color: #000;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #005900ff; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  margin-bottom: 20px; 
+}
+
+/* logo */
+header img {
+  height: 50px;
+}
+
+/* menú principal */
+header .menu {
+  display: flex;
+  gap: 40px; 
+}
+
+header .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+header .menu a:hover {
+  opacity: 0.8;
+}
+
+/* MAIN */
+.conocenos {
+  background-color: #f2f7ecff; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos {
+  text-align: center;
+  max-width: 800px;
+}
+
+.quienes-somos h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quienes-somos p {
+  color: #000000;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 250px;
+  background-color: #d9e2d0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.btn-trabaja {
+  background-color: #005900ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-trabaja:hover {
+  background-color: #007a00;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #005900ff; 
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 60px; 
+  margin-top: 20px;
+}
+
+footer .div_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer .div_footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+footer .div_footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+footer .div_footer a:hover {
+  opacity: 0.8;
+}
+
+footer .reservado {
+  text-align: center;
+}
