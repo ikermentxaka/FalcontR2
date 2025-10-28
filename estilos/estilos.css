@@ -148,7 +148,7 @@ h1 {
 
 main {
     flex: 1;
-    background-color: #f2f2f2ff;
+    background-color: rgb(250, 250, 250);
 }
 
 /* CABECERA */

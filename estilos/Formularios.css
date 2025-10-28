@@ -1,50 +1,72 @@
+html,
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #f2f7ecff;
 }
 
-.form-container{
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    min-height: 100%;
+    background-image: url(/src/voluntarios_inicio_sesion.jpg);
+}
+
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    margin-bottom: 2em;
+    width: 50%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    padding:20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Más suave */
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);    
 }
 
 .form input {
     border: none;
-    border-bottom: 1px solid #000;
     outline: none;
-    padding: 8px;
-    margin: 20px;
-    background: transparent;
+    padding: 5px;
+    text-align: center;
+    color: rgb(86, 86, 86);
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.20);
+    /* Más suave */
+    backdrop-filter: blur(100px);
     font-family: "Poppins", sans-serif;
+    border-color: grey;
+    border-radius: 100px;
 }
 
-.form a{
+.form a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
-    color: grey;
+    padding-top: 5px;
+    color: rgb(99, 99, 99);
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #005900ff;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -60,9 +82,43 @@ h3 {
 
 input[type="submit"] {
     border: none;
-    background-color: #005900ff;
+    background-color: rgba(0, 89, 0, 0.6);
     color: white;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 120, 0, 0.75);
+}
+
+
+.cambio_inicio_sesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.container_inicio_sesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.container_inicio_sesion a {
+    color: grey;
+    text-decoration: none;
+}
+
+.cambio_inicio_sesion img {
+    height: 50px;
+    width: auto;
+    padding-bottom: 25%;
 }
