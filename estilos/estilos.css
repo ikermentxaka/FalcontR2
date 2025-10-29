@@ -340,16 +340,17 @@ footer .reservado {
 }
 
 /* MANTENIMIENTO */
-
 .alert_container {
+    padding-bottom: 20px;
     border-radius: 1em;
     border-style: solid;
-    border-color: #005900ff;
+    border-color: rgb(230, 230, 230);
+    backdrop-filter: blur(5px);
     border-width: 1px;
     padding-inline: 2em;
     margin-inline: 30%;
     margin-block: 10%;
-    background-color: #f2f7ecff;
+    background-color: rgba(224, 224, 224, 0.596);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -361,9 +362,7 @@ footer .reservado {
     margin-bottom: 2em;
 }
 
-#halert {
-    margin-top: 1em;
-}
+
 
 /* CONTACTANOS */
 #container_contacto {
@@ -437,4 +436,23 @@ footer .reservado {
     resize: vertical;
     overflow: hidden;
     height: 15vh;
+}
+
+
+input[type="submit"] {
+    border: none;
+    background-color: rgba(0, 89, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+
+
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 89, 0, 0.9);
 }
