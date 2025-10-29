@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 html,
 body {
     height: 100%;
@@ -30,10 +37,11 @@ body {
     flex-direction: column;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.15);
-    /* Más suave */
     backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.25);    
+    width: 50%;
+    height: 40%;
 }
 
 .form input {
@@ -43,6 +51,7 @@ body {
     text-align: center;
     color: rgb(86, 86, 86);
     margin: 5px;
+    padding-inline: vw;
     background-color: rgba(255, 255, 255, 0.20);
     /* Más suave */
     backdrop-filter: blur(100px);
@@ -88,6 +97,7 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 15px;
 }
 
 input[type="submit"]:hover {
@@ -118,7 +128,7 @@ input[type="submit"]:hover {
 }
 
 .cambio_inicio_sesion img {
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 30vw;
     padding-bottom: 25%;
 }

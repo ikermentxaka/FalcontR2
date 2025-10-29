@@ -44,7 +44,7 @@
   <main id="container_contacto">
     <div id="contacto">
 
-      <h1>Contáctanos</h1></br>
+      <h1>Contáctanos</h1>
 
       <div id="contacto_descripcion">
         <p>Si necesitas más información o tienes alguna duda, estaremos encantados de atenderte.</p>
@@ -62,22 +62,17 @@
 
     </div>
 
-    <div id="form_contacto">
+    <form class="form">
 
-      <form class="form">
+      <input type="text" id="fname" class="inputcont" name="funame" placeholder="Nombre"></br>
+      <input type="text" id="femail" class="inputcont" name="femail" placeholder="Correo"></br>
+      <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Asunto"></br>
 
-        <input type="text" id="fname" class="inputcont" name="funame" placeholder="Nombre"></br>
-        <input type="text" id="femail" class="inputcont" name="femail" placeholder="Correo"></br>
-        <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Asunto"></br>
+      <textarea id="fmsg" class="inputcont" name="Text1" rows="1" placeholder="Escribe tu mensaje..."></textarea></br></br>
 
-        <label for="femail">Mensaje</label></br>
-        <textarea id="fmsg" class="inputcont" name="Text1" rows="5"></textarea></br></br>
+      <input type="submit" class="botones" value="Enviar">
 
-        <input type="submit" value="Enviar">
-
-      </form>
-
-    </div>
+    </form>
 
   </main>
 
