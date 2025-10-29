@@ -139,16 +139,14 @@ body {
 
 h1 {
     color: #005700ff;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 main {
     flex: 1;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 /* CABECERA */
@@ -193,79 +191,6 @@ header img {
     font-style: normal;
 }
 
-#imagen_index {
-    background-image: url('/src/index_running.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#imagen_index h1 {
-    color: white;
-}
-
-#container_eventos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-    margin: 20px;
-    margin-bottom: 100px;
-}
-
-.evento_index {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 10px;
-    border: 1px #005900ff solid;
-    width: 75%;
-    padding: 50px;
-    margin-top: 50px;
-    background-color: #f2f7ecff;
-    gap: 10px;
-}
-
-.evento_index img {
-    width: 200px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 50px;
-
-}
-
-.descripcion_evento {
-    max-height: 150px;
-    /* altura visible */
-    overflow: hidden;
-    /* oculta el resto */
-    position: relative;
-    text-align: justify;
-}
-
-.extra_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 20%;
-    margin-left: 10px;
-    text-align: right;
-    color: grey;
-}
-
-#inscribirse_evento {
-    margin-left: 50px;
-}
-
 /* FOOTER */
 
 footer {
@@ -307,6 +232,76 @@ footer .reservado {
     text-align: center;
 }
 
+/* INDEX EVENTOS */
+
+#imagen_index {
+    background-image: url('/src/index_running.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen_index h1 {
+    color: white;
+}
+
+#container_eventos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.evento_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding: 50px;
+    border: none;
+}
+.evento_index:hover {
+    border: 1px #005900 solid;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.evento_index img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 50px;
+
+}
+
+.descripcion_evento {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+}
+
+.extra_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 /* SOBRE NOSOTROS */
 .container_conocenos {
     display: flex;
@@ -339,31 +334,6 @@ footer .reservado {
     margin-bottom: 0;
 }
 
-/* MANTENIMIENTO */
-.alert_container {
-    padding-bottom: 20px;
-    border-radius: 1em;
-    border-style: solid;
-    border-color: rgb(230, 230, 230);
-    backdrop-filter: blur(5px);
-    border-width: 1px;
-    padding-inline: 2em;
-    margin-inline: 30%;
-    margin-block: 10%;
-    background-color: rgba(224, 224, 224, 0.596);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-#boton_inicio {
-    margin-bottom: 2em;
-}
-
-
-
 /* CONTACTANOS */
 #container_contacto {
     display: flex;
@@ -372,8 +342,8 @@ footer .reservado {
     margin-block: 5%;
     padding: 5%;
     justify-content: space-between;
-    background-color: rgba(0, 89, 0, 0.473);
     border-radius: 15px;
+    border: 1px #005900ff solid;
 }
 
 #contacto {
@@ -381,14 +351,7 @@ footer .reservado {
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    height: 40vh;
     text-align: justify;
-
-}
-
-#contacto h1 {
-    text-align: left;
-    margin-top: 0;
 }
 
 #contacto_info a,
@@ -407,51 +370,42 @@ footer .reservado {
 .form input {
     border: none;
     outline: none;
-    padding: 5px;
-    padding-left: 5%;
+    padding-block: 7px;
+    padding-left: 15px;
     color: rgb(86, 86, 86);
-    margin: 5px;
-    padding-inline: vw;
-    background-color: rgba(255, 255, 255, 0.20);
-    /* Más suave */
+    margin: 10px;
     backdrop-filter: blur(100px);
     font-family: "Poppins", sans-serif;
-    border-color: grey;
     border-radius: 100px;
+    border: 1px #005900ff solid;
 }
 
 .form textarea {
     border: none;
     outline: none;
-    padding: 5px;
-    padding-left: 5%;
+    padding: 15px;
     color: rgb(86, 86, 86);
-    margin: 5px;
-    padding-inline: vw;
+    margin: 10px;
     background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(100px);
     font-family: "Poppins", sans-serif;
-    border-color: grey;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 1px #005900ff solid;
     resize: vertical;
     overflow: hidden;
     height: 15vh;
 }
 
-
 input[type="submit"] {
     border: none;
+    border-radius: 50px;
     background-color: rgba(0, 89, 0, 0.8);
     color: white;
     padding: 8px 16px;
-    border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
     margin-top: 15px;
 }
-
-
-
 
 input[type="submit"]:hover {
     background-color: rgba(0, 89, 0, 0.9);
