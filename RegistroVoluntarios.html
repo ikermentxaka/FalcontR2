@@ -42,20 +42,32 @@
 
       <h2>Registro</h2>
 
+      <!-- DATOS PERSONALES -->
       <input type="text" id="fname" name="fname" placeholder="Nombre" required>
       <input type="text" id="fsurname" name="fsurname" placeholder="Apellidos">
       <input type="date" id="edad" name="edad" placeholder="Edad" required>
-      <label>¿Tienes vehículo?</label><br>
-      <input type="radio" id="vehiculo-si" name="vehiculo" value="si" required>
-      <label for="vehiculo-si">Sí</label>
 
-      <input type="radio" id="vehiculo-no" name="vehiculo" value="no">
-      <label for="vehiculo-no">No</label>
+      <!-- DATOS DE CONTACTO -->
       <input type="tel" id="fphone" name="fphone" placeholder="Número de teléfono" pattern="[0-9]{9}" required>
       <input type="email" id="femail" name="femail" placeholder="Correo" required>
+
+      <!-- INFORMACIÓN ADICIONAL -->
+      <label>¿Tienes vehículo?</label>
+      <div id="vehiculo">
+        <input type="radio" id="vehiculo-si" name="vehiculo" value="si" required>
+        <label for="vehiculo-si">Sí</label>
+        <input type="radio" id="vehiculo-no" name="vehiculo" value="no">
+        <label for="vehiculo-no">No</label>
+      </div>
+
+      <label>En caso de tener alguna discapacidad, indicalo debajo</label>
+      <input type="text" id="fdisc" name="fdisc" placeholder="Indica aqui si tienes alguna discapacidad">
+
+      <!-- ACCESO -->
       <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña" required>
 
       <input type="submit" value="Registrar">
+
 
     </form>
   </div>

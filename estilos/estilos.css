@@ -258,7 +258,7 @@ footer .reservado {
     align-items: center;
     align-content: center;
     padding: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .evento_index {
@@ -268,6 +268,7 @@ footer .reservado {
     width: 60%;
     padding: 50px;
     border: none;
+    margin-block: 10px;
 }
 .evento_index:hover {
     border: 1px #005900 solid;

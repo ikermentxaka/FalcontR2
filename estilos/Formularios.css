@@ -1,27 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     
 }
 
-html,
-body {
+html {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     min-height: 100%;
-    background-image: url(/src/voluntarios_inicio_sesion.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/src/voluntarios_inicio_sesion.jpg) center center / cover no-repeat;
+    height: 100%;
 }
 
 .form-container {
@@ -31,16 +26,28 @@ body {
     width: 50%;
 }
 
+/* Todos los Formularios*/
 .form {
     display: flex;
     flex-direction: column;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);    
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 50%;
     height: 40%;
+}
+
+.form a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
 }
 
 .form input {
@@ -50,24 +57,44 @@ body {
     text-align: center;
     color: rgb(86, 86, 86);
     margin: 5px;
-    padding-inline: vw;
     background-color: rgba(255, 255, 255, 0.20);
-    /* Más suave */
-    backdrop-filter: blur(100px);
-    font-family: "Poppins", sans-serif;
-    border-color: grey;
     border-radius: 100px;
 }
 
-.form a {
+input[type="submit"] {
+    border: none;
+    background-color: rgba(0, 89, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+input[type="submit"]:hover {
+    background-color: rgba(0, 89, 0, 0.9);
+}
+
+input[type="radio"] {
+  accent-color: rgba(0, 89, 0, 0.8); 
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    margin-right: 15px;
+    color: rgb(86, 86, 86);
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    padding-top: 5px;
-    color: rgb(99, 99, 99);
-    text-decoration: none;
-    font-size: 0.8em;
 }
 
 h2 {
@@ -88,22 +115,8 @@ h3 {
     font-style: normal;
 }
 
-input[type="submit"] {
-    border: none;
-    background-color: rgba(0, 89, 0, 0.8);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 15px;
-}
 
-
-input[type="submit"]:hover {
-    background-color: rgba(0, 89, 0, 0.9);
-}
-
+/*Parte blanca de la pantalla*/
 
 .cambio_inicio_sesion {
     display: flex;
@@ -133,33 +146,24 @@ input[type="submit"]:hover {
     padding-bottom: 25%;
 }
 
-.seleccion_registro{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+/*Registro*/
+.seleccion_registro {
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);    
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 50%;
     height: 40%;
+    font-size: larger;
     text-align: center;
     text-decoration: none;
     color: black;
+    margin-block: 50px;
+    transition: 0.3s;
 }
 
-.botones{
-    border: none;
-    background-color: rgba(0, 89, 0, 0.8);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 15px;
-    text-decoration: none;
-}
-.botones:hover {
-    background-color: rgba(0, 89, 0, 0.9);
+.seleccion_registro:hover {
+    transform: scale(1.04);
+    backdrop-filter: blur(15px);
 }
