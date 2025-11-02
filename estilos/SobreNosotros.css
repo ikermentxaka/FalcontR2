@@ -1,0 +1,32 @@
+/* SOBRENOSOTROS.HTML */
+
+.container_conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#descripcion_conocenos {
+    margin-inline: 20%;
+    margin-block: 30px;
+}
+
+#descripcion_conocenos p {
+    margin-block: 10px;
+    text-align: justify;
+}
+
+#boton_conocenos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+#boton_conocenos button {
+    margin-bottom: 0;
+}

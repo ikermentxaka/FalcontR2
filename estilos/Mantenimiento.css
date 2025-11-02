@@ -1,175 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-/* Clases de la tipografía Poppins */
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-
-}
-h1 {
-    color: #005700ff;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    margin-top: 30px;
-}
-#halert {
-    margin-top: 1em;
-}
-body{
-    display: flex;
+body {
     align-items: center;
     justify-content: center;
-    background-image: url('/src/index_running.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    overflow: hidden;
-    height: 100vh;
+    background: url('/src/index_running.jpg') center/cover no-repeat;
+    padding: 2rem;
 }
+
 .alert_container {
-    
-    padding-bottom: 20px;
+    width: min(100%, 450px);
+    max-height: 90vh;
+    padding: 2rem;
     border-radius: 1em;
-    border-style: solid;
-    border-color: rgb(230, 230, 230);
+    border: 1px solid rgb(230, 230, 230);
+
     backdrop-filter: blur(25px);
-    border-width: 1px;
-    padding-inline: 2em;
-    margin-inline: 30%;
-    /*margin-block: 10%;*/
-    background-color: rgba(224, 224, 224, 0.596);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    background-color: rgba(224, 224, 224, 0.6);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-input[type="submit"] {
-    border: none;
-    background-color: rgba(0, 89, 0, 0.8);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-input[type="submit"]:hover {
-    background-color: rgba(0, 89, 0, 0.9);
-}
-html{
-    margin:0px;
-    padding: 0px;
+p {
+    text-align: center;
+    line-height: 1.5;
+    color: #222;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
 }

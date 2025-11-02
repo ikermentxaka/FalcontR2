@@ -1,0 +1,111 @@
+/* VARIABLES DE COLOR (fáciles de cambiar) */
+:root {
+    --verde-principal: #005900;
+    --verde-oscuro: #005700;
+    --blanco: #ffffff;
+    --gris-oscuro: #333333;
+    --gris-claro: #999999;
+}
+
+/* RESETEO GLOBAL Y BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--blanco);
+    color: var(--gris-oscuro);
+}
+
+/* TIPOGRAFÍA GENERAL */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--verde-oscuro);
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2rem; text-align: center; margin: 30px 0; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--gris-oscuro);
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* ENLACES */
+a {
+    text-decoration: none;
+    color: var(--verde-principal);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--verde-oscuro);
+}
+
+/* LISTAS */
+ul, ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    line-height: 1.6;
+}
+
+/* IMÁGENES */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* BOTONES */
+.botones {
+    border: none;
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botones:hover {
+    background-color: var(--verde-oscuro);
+}
+
+/* ESTRUCTURA PRINCIPAL */
+main {
+    flex: 1;
+}
+
+/* OPCIONAL: TEXTOS ESPECIALES */
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}

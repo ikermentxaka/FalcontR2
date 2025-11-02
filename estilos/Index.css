@@ -1,0 +1,71 @@
+
+/* INDEX.HTML */
+
+#imagen_index {
+    background-image: url('/src/index_running.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen_index h1 {
+    color: white;
+}
+
+#container_eventos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.evento_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding: 50px;
+    border: none;
+    margin-block: 10px;
+}
+.evento_index:hover {
+    border: 1px #005900 solid;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.evento_index img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 50px;
+
+}
+
+.descripcion_evento {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+}
+
+.extra_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,77 @@
+/* CONTACTO.HTML*/
+
+#container_contacto {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10%;
+    margin-block: 5%;
+    padding: 5%;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px #005900ff solid;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    text-align: justify;
+}
+
+#contacto_info a,
+#contacto_info p {
+    text-align: left;
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.form input {
+    border: none;
+    outline: none;
+    padding-block: 7px;
+    padding-left: 15px;
+    color: rgb(86, 86, 86);
+    margin: 10px;
+    backdrop-filter: blur(100px);
+    font-family: "Poppins", sans-serif;
+    border-radius: 100px;
+    border: 1px #005900ff solid;
+}
+
+.form textarea {
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: rgb(86, 86, 86);
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(100px);
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    border: 1px #005900ff solid;
+    resize: vertical;
+    overflow: hidden;
+    height: 15vh;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 89, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 89, 0, 0.9);
+}
