@@ -1,7 +1,7 @@
 body {
     align-items: center;
     justify-content: center;
-    background: url('/src/index_running.jpg') center/cover no-repeat;
+    background: url('../src/index_running.jpg') center/cover no-repeat;
     padding: 2rem;
 }
 
