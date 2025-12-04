@@ -1,9 +1,9 @@
 /* CONTACTO.HTML*/
 
-#container_contacto {
+main {
     display: flex;
     flex-direction: row;
-    margin-inline: 10%;
+    margin-inline: 15%;
     margin-block: 5%;
     padding: 5%;
     justify-content: space-between;
@@ -11,10 +11,9 @@
     border: 1px #005900ff solid;
 }
 
-#contacto {
+#info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 50%;
     text-align: justify;
 }
@@ -26,14 +25,17 @@
     color: rgb(99, 99, 99);
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     width: 35%;
 }
 
-.form input {
-    border: none;
+form label{
+    text-align: center;
+}
+
+input {
     outline: none;
     padding-block: 7px;
     padding-left: 15px;
@@ -41,11 +43,12 @@
     margin: 10px;
     backdrop-filter: blur(100px);
     font-family: "Poppins", sans-serif;
+
     border-radius: 100px;
     border: 1px #005900ff solid;
 }
 
-.form textarea {
+textarea {
     border: none;
     outline: none;
     padding: 15px;
@@ -74,4 +77,22 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: rgba(0, 89, 0, 0.9);
+}
+
+input[type="file"]{
+    border: none;
+    text-align: center;
+}
+
+input[type="file"]::file-selector-button {
+    border: 1px rgb(86, 86, 86) solid;
+    background-color: transparent;
+    color: rgb(86, 86, 86);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 7300;
 }
