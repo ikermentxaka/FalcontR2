@@ -30,10 +30,3 @@
 #boton_conocenos button {
     margin-bottom: 0;
 }
-
-#video{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-block: 25px;
-}

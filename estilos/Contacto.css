@@ -18,6 +18,13 @@ main {
     text-align: justify;
 }
 
+.video {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
 #contacto_info a,
 #contacto_info p {
     text-align: left;
@@ -28,7 +35,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
 }
 
 form label{
@@ -95,4 +102,8 @@ input[type="file"]::file-selector-button {
     transition: background 0.3s;
     font-family: "Poppins", sans-serif;
     font-weight: 7300;
+}
+
+iframe{
+    border-radius: 10px;
 }
