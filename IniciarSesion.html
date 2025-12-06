@@ -14,46 +14,85 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Enlace a la fuente Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Archivo CSS -->
   <link rel="stylesheet" href="estilos/General.css">
+  <link rel="stylesheet" href="estilos/Layout.css">
   <link rel="stylesheet" href="estilos/Formularios.css">
 
 </head>
 
 <body>
 
-  <div class="form-container">
-
-    <form class="form">
-
-      <h2>Inicio de sesión</h2>
-
-      <input type="text" id="fuser" name="fuser" placeholder="Email">
-      <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña">
-      <a href="">He olvidado mi contraseña</a>
-
-      <input type="submit" class="submit" value="Iniciar Sesion">
-
-    </form>
-
-  </div>
-
-  <div class="cambio_inicio_sesion">
-
-    <a href="index.html">
-      <img src="src/Logo_VV_v1_VERDE.png" alt="Logo">
-    </a>
-
-    <div class="container_inicio_sesion">
-      <h2>
-        ¿No tienes cuenta?
-      </h2>
-      <a href="Registro.html">Registrate</a>
+  <header>
+    <!-- LOGO -->
+    <div>
+      <a href="index.html">
+        <img src="src/Logo_VV_v1_Blanco.png" alt="Logo">
+      </a>
+    </div>
+    <!-- MENU -->
+    <div class="menu">
+      <a href="Mantenimiento.html">VOLUNTARIADO</a>
+      <a href="SobreNosotros.html">SOBRE NOSOTROS</a>
+      <a href="Contacto.html">CONTACTO</a>
+    </div>
+    <!-- ICONO INICIO DE SESION -->
+    <div>
+      <a href="IniciarSesion.html">
+        <img src="src/PerfilInicioSesion.png" alt="Perfil">
+      </a>
     </div>
 
-  </div>
+  </header>
+
+  <main>
+    <div class="form-wrap">
+      <div class="titulo">
+        <h2>Inicio de sesión</h2>
+      </div>
+
+      <form>
+        <input type="text" id="fuser" name="fuser" placeholder="Email">
+        <input type="password" id="fpwd" name="fpwd" placeholder="Contraseña">
+        <a href="">He olvidado mi contraseña</a>
+
+        <button class="submit">Iniciar sesión</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="div_footer">
+      <h3>ENLACES</h3>
+      <a href="TrabajaNosotros.html">Trabaja con nosotros</a>
+      <a href="RegistroVoluntarios.html">Hazte Voluntario</a>
+    </div>
+
+    <div class="div_footer">
+      <h3>CONTACTO</h3>
+      <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank">
+        <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
+      </a>
+      <p>+34 123 45 67 89</p>
+      <a href="mailto:correoelectronico@gmail.com">correoelectronico@gmail.com</a>
+    </div>
+
+    <div class="div_footer">
+      <h3>REDES SOCIALES</h3>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://x.com/" target="_blank">X</a>
+    </div>
+
+  </footer>
 
 </body>
+
 </html>
