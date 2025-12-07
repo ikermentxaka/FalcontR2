@@ -12,6 +12,7 @@ main {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -33,7 +34,8 @@ main {
     background-position: center;
     padding: 70px 15px 74px 15px;
 }
-h2{
+
+h2 {
     color: white;
 }
 
@@ -46,14 +48,16 @@ h2{
 
 }
 
-input{
+input {
     padding: 10px;
     margin: 10px;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #b2b2b2;
     outline: none;
+    width: 75%;
 }
-button{
+
+button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +73,34 @@ button{
     cursor: pointer;
 }
 
-form a{
+.crearCuenta {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
     font-size: 0.9em;
     font-weight: 300;
     margin: 10px;
+}
+
+main a {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 10px;
+}
+
+#vehitxt{
+    display: flex;
+    justify-content: center;
+}
+#vehiculo{
+    display: flex;
+    justify-content: center;
+}
+#diversidad{
+    font-size: small;
 }
