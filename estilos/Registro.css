@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cajaVoluntario, .cajaAdmin {
+    height: 300px;
+    width: 400px;
+    margin-block: 200px;
+    margin-inline: 100px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.seleccion_registro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1rem;      /* tamaño base */
+    transition: transform 0.2s ease;   /* animación suave */
+}
+
+.seleccion_registro:hover {
+    transform: scale(1.12);   /* agranda el texto (y el enlace) */
+}
