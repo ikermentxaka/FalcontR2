@@ -111,16 +111,11 @@ iframe{
 @media(max-width: 860px) {
 
     #info {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        text-align: justify;
         
     }
 
     form {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         margin-top: 430px;
         margin-left: -400px;
