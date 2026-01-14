@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="shortcut icon" href="src/favicon.ico" />
+    <link rel="shortcut icon" href="src/favicon.ico" />
     <title>Voluntariado Verde</title>
 
     <!-- Conexión previa con Google Fonts -->
@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Enlace a la fuente Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Archivo CSS -->
     <link rel="stylesheet" href="estilos/General.css">
@@ -27,25 +29,34 @@
 
     <header>
         <!-- LOGO -->
-        <div>
+        <div class="logo">
             <a href="index.html">
                 <img src="src/Logo_VV_v1_Blanco.png" alt="Logo">
             </a>
         </div>
+    
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="hamburguesa" aria-label="Menú">
+            ☰
+        </button>
+    
         <!-- MENU -->
         <div class="menu">
             <a href="Mantenimiento.html">VOLUNTARIADO</a>
             <a href="SobreNosotros.html">SOBRE NOSOTROS</a>
             <a href="Contacto.html">CONTACTO</a>
+            <!-- LOGIN SOLO MÓVIL -->
+            <a href="IniciarSesion.html" class="login-mobile">INICIAR SESIÓN</a>
         </div>
-        <!-- ICONO INICIO DE SESION -->
-        <div>
+    
+        <!-- ICONO LOGIN SOLO DESKTOP -->
+        <div class="login-desktop">
             <a href="IniciarSesion.html">
                 <img src="src/PerfilInicioSesion.png" alt="Perfil">
             </a>
         </div>
-
     </header>
+    
 
     <main class="main">
 
@@ -136,6 +147,15 @@
         </div>
 
     </footer>
+    <script>
+        const hamburguesa = document.querySelector('.hamburguesa');
+        const menu = document.querySelector('.menu');
+    
+        hamburguesa.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>    
 
 </body>
+
 </html>
