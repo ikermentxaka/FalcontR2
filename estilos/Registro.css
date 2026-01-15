@@ -7,7 +7,8 @@ main {
     align-content: center;
 }
 
-.cajaVoluntario, .cajaAdmin {
+.cajaVoluntario,
+.cajaAdmin {
     height: 300px;
     width: 400px;
     margin-block: 200px;
@@ -31,10 +32,22 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-size: 1rem;      /* tamaño base */
-    transition: transform 0.2s ease;   /* animación suave */
+    font-size: 1rem;
+    transition: transform 0.2s ease;
 }
 
 .seleccion_registro:hover {
-    transform: scale(1.12);   /* agranda el texto (y el enlace) */
+    transform: scale(1.12);
+}
+
+@media (max-width:860px) {
+
+    .cajaVoluntario,
+    .cajaAdmin {
+        margin: 20px;
+        height: 100px;
+        width: 300px;
+    }
+
+
 }

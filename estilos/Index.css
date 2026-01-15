@@ -39,8 +39,6 @@
 }
 
 .evento_index:hover {
-    border: 1px #005900 solid;
-    border-radius: 15px;
     cursor: pointer;
     transform: scale(1.01);
 }

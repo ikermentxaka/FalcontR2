@@ -8,6 +8,26 @@ form {
     padding: 50px;
 }
 
+.titulo {
+    background: linear-gradient(rgba(180, 180, 180, 0.3), rgba(43, 43, 43, 0.3)),
+        url(../src/voluntarios_inicio_sesion.jpg) center center / cover no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 70px 15px 74px 15px;
+}
+
+h2 {
+    color: white;
+}
+
 main {
     width: 100%;
     min-height: 100vh;
@@ -20,25 +40,6 @@ main {
     background: #ebeeef;
 }
 
-.titulo {
-    background: linear-gradient(rgba(180, 180, 180, 0.3), rgba(43, 43, 43, 0.3)), url(../src/voluntarios_inicio_sesion.jpg) center center / cover no-repeat;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 70px 15px 74px 15px;
-}
-
-h2 {
-    color: white;
-}
-
 .form-wrap {
     width: 670px;
     background: #fff;
@@ -46,15 +47,6 @@ h2 {
     overflow: hidden;
     position: relative;
 
-}
-
-input {
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-bottom: 1px solid #b2b2b2;
-    outline: none;
-    width: 75%;
 }
 
 button {
@@ -69,8 +61,96 @@ button {
     border: none;
     color: #fff;
     line-height: 1.2;
-    margin: 10px;
+    margin-top: 38px;
     cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #b2b2b2;
+    outline: none;
+    width: 75%;
+}
+
+.cajas{
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*---------------MEDIA QUERIES SMARTPHONE---------------*/
+@media (max-width:860px) {
+
+    .form-wrap {
+        width: 100vw;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        min-width: 160px;
+        height: 50px;
+        background-color: #005900;
+        border-radius: 25px;
+        border: none;
+        color: #fff;
+        line-height: 1.2;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    main {
+        min-height: auto;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 0px 0px 0px;
+        margin-top: 0px;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-bottom: 1px solid #b2b2b2;
+        outline: none;
+        width: 99%;
+        max-width: 400px;
+    }
+
+    .botones{
+        border-radius: 100%;
+    }
+
+    .cajas{
+        flex-direction: column;
+        min-height: 400px;   
+        padding: 10%;
+    }
+    #vehitxt {
+        display: block;
+    }
+    
+    #vehiculo {
+        display: block;
+    }
+
+    .submit{
+        font-size: 1rem;
+    }
+}
+
+.botones a{
+    margin: 0;
+    color: var(--blanco);
 }
 
 .crearCuenta {
@@ -93,14 +173,16 @@ main a {
     margin: 10px;
 }
 
-#vehitxt{
+#vehitxt {
     display: flex;
     justify-content: center;
 }
-#vehiculo{
+
+#vehiculo {
     display: flex;
     justify-content: center;
 }
-#diversidad{
+
+#diversidad {
     font-size: small;
 }

@@ -27,6 +27,30 @@
     margin-bottom: 3em;
 }
 
-#boton_conocenos button {
-    margin-bottom: 0;
+@media(max-width: 860px) {
+
+    #descripcion_conocenos {
+        margin-inline: 30px;
+        margin-block: 0px;
+    }
+    
+    #boton_conocenos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 50px;
+        margin: 0;
+        margin-bottom: 1em;
+
+    }
+    .botones {
+        padding: 18px 40px;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+
+
 }
