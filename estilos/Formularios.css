@@ -126,10 +126,6 @@ input {
         max-width: 400px;
     }
 
-    .botones{
-        border-radius: 100%;
-    }
-
     .cajas{
         flex-direction: column;
         min-height: 400px;   
@@ -146,11 +142,6 @@ input {
     .submit{
         font-size: 1rem;
     }
-}
-
-.botones a{
-    margin: 0;
-    color: var(--blanco);
 }
 
 .crearCuenta {

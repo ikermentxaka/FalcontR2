@@ -87,13 +87,16 @@ img {
     background-color: var(--verde-principal);
     color: var(--blanco);
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    height: 44px;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .botones:hover {
-    background-color: var(--verde-oscuro);
+    font-size: 16px;
+    background-color: #006e00;
 }
 
 /* ESTRUCTURA PRINCIPAL */
