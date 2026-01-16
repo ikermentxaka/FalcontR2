@@ -27,11 +27,21 @@
     margin-bottom: 50px;
 }
 
-.evento_index {
+.evento_index1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
+    border: none;
+    margin-block: 10px;
+    min-width: 660px;
+}
+
+.evento_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     padding-block: 50px;
     border: none;
     margin-block: 10px;
@@ -86,41 +96,49 @@
         margin-bottom: 20px;
     }
 
+    .evento_index1{
+        width: 100%;
+        min-width: 0;
+    }
     .evento_index {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         padding-block: 1px;
         min-width: min-content;
         width: 100%;
     }
 
     .evento_index img {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        aspect-ratio: 3 / 2;
         object-fit: cover;
-        margin-right: 20px;
-        border-radius: 8px;
+        border-radius: 4px;
+        margin-right: 0px;
+        margin-bottom: 20px;
     }
 
     .extra_info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
+        justify-content: space-around;
         width: auto;
     }
 
     .extra_info p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .informacion-evento {
         width: fit-content;
-        height: 150px;
+        height: 50px;
     }
 
     .informacion-evento h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
+       
     }
 
     .descripcion_evento {
@@ -129,4 +147,12 @@
     .evento_index:hover {
         border: none;
     }
+    hr{
+        width: 75%;
+        margin: 5%;
+        border: none;
+        background-color: grey;
+        height: 0.5px;
+    }
+
 }
