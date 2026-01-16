@@ -18,16 +18,17 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Archivo CSS -->
+  <!-- Archivos CSS -->
   <link rel="stylesheet" href="estilos/General.css">
   <link rel="stylesheet" href="estilos/Layout.css">
-  <link rel="stylesheet" href="estilos/Formularios.css">
+  <link rel="stylesheet" href="estilos/Evento.css">
 
 </head>
 
 <body>
 
   <header>
+
     <!-- LOGO -->
     <div>
       <a href="index.html">
@@ -50,21 +51,42 @@
   </header>
 
   <main>
-    <div class="form-wrap">
-      <div class="titulo">
-        <h2>Elija una opcion</h2>
-      </div>
 
-      <div class="cajas">
-        <div>
-          <a class="botones" href="RegistroVoluntarios.html">Unirme al Voluntariado</a>
+    <div id="tarjeta">
+
+        <div id="banner">
+            <h1>Nombre del evento</h1>
         </div>
-        <div>
-          <a class="boton_blanco" href="RegistroAdmin.html">Crea eventos y gestionalos</a>
+
+        <div id="tarjeta-info">
+
+            <div id="resumen">
+                <div class="icoytxt">
+                <img class="icono"  src="src/Icono-evento_fecha.png" alt="icono fecha">
+                <p>11 de Abríl, 2025</p>
+                </div> 
+                <div class="icoytxt">  
+                <img class="icono"  src="src/Icono-evento_ubi.png" alt="icono fecha">
+                <p>Santurtzi</p>
+                </div>
+                <div class="icoytxt">
+                <img class="icono" src="src/Icono-evento_inscritos.png" alt="icono fecha">
+                <p>2</p>
+                </div>   
+            </div>
+            <hr>
+            <p id="descripcion"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu feugiat turpis. Sed vestibulum dictum dui quis hendrerit. Quisque eu consectetur felis. Nam laoreet mi vel justo pellentesque, sed euismod diam sodales. In semper blandit malesuada. Vivamus vitae ultrices arcu, vitae sagittis sapien. Nullam finibus, justo vel rhoncus semper, metus leo venenatis purus, id gravida massa metus eget neque. Donec nec lorem mauris.
+
+                 </p>
+
+             <div id="inscripcion">    
+                <p>7/20 inscritos</p>
+                <button class="botones">Inscribirse</button>
+            </div>
         </div>
-      </div>
+
     </div>
-
+    
   </main>
 
   <footer>
@@ -95,5 +117,4 @@
   </footer>
 
 </body>
-
 </html>

@@ -82,6 +82,23 @@ input {
     justify-content: space-around;
 }
 
+.boton_blanco {
+    border: 1px solid #005900;
+    color: var(--verde-principal);
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 44px;
+    font-size: 14px;
+    transition: all 0.4s ease;
+}
+
+.boton_blanco:hover {
+    font-size: 16px;
+    background-color: #006e00;
+    color: var(--blanco);
+}
+
 /*---------------MEDIA QUERIES SMARTPHONE---------------*/
 @media (max-width:860px) {
 

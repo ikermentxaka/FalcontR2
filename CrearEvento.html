@@ -53,21 +53,29 @@
     <main>
         <form enctype="multipart/form-data">
 
-            <h1>Trabaja con nosotros</h1>
+            <h1>Crear un evento</h1>
 
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="tel" id="fphone" name="fphone" placeholder="Número de teléfono"
-                pattern="^(\+?\s?34\s?)?(\s*\d\s*){9}$" required>
-
-            <label for="mensaje">Selecciona el CV (PDF, JPG, JPEG o PNG):</label>
+            <input type="date" id="fecha" name="fecha" placeholder="Fecha" required>
+            <select id="tipoEvento" name="tipoEvento" required>
+                <option value="" disabled selected>Selecciona el tipo de evento</option>
+                <option value="motocros">Motocross</option>
+                <option value="maraton">Maratón</option>
+                <option value="ciclismo">Ciclismo</option>
+                <option value="senderismo">Senderismo / Trail</option>
+                <option value="otro">Otro</option>
+            </select>
+            <input type="number" id="numeroVoluntarios" name="numeroVoluntarios" placeholder="Voluntarios" min="1" step="1" required>
+            <input type="text" id="lugar" name="lugar" placeholder="Lugar" required>
+            <label for="mensaje">Selecciona foto de evento (JPG, JPEG o PNG):</label>
             <input type="file" id="archivo" accept=".pdf, .jpg, .jpeg, .png" name="archivo" required>
+            <textarea id="descripción" name="Text1" rows="1" placeholder="Escribe la descripción.."></textarea>
 
-            <input type="submit" class="botones" value="Enviar candidatura">
+            <input type="submit" class="botones" value="Crear Evento">
 
         </form>
         <div class="img">
-            <img src="/src/trabajaconnostros.jpg">
+            <img src="/src/crearEvento.jpg">
         </div>
     </main>
 

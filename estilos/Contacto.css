@@ -42,10 +42,11 @@ form label{
     text-align: center;
 }
 
-input {
+input, select {
     outline: none;
     padding-block: 7px;
     padding-left: 15px;
+    padding-right: 10px;
     color: rgb(86, 86, 86);
     margin: 10px;
     backdrop-filter: blur(100px);
