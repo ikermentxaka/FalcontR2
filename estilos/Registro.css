@@ -7,47 +7,97 @@ main {
     align-content: center;
 }
 
-.cajaVoluntario,
-.cajaAdmin {
-    height: 300px;
-    width: 400px;
-    margin-block: 200px;
-    margin-inline: 100px;
+.selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-block: 100px;
+}
 
+.cajas {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-
-    border: 1px solid black;
-    border-radius: 25px;
+    gap: 50px;
+    background-color:#eeeeee;
+    padding: 75px;
+    border-radius: 16px;
 }
 
-.seleccion_registro {
-    height: 100%;
-    width: 100%;
+.btn-rol {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
     align-items: center;
-    align-content: center;
-    font-size: 1rem;
-    transition: transform 0.2s ease;
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    border: 3px solid #0059006b;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
 }
 
-.seleccion_registro:hover {
-    transform: scale(1.12);
+.btn-rol:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+}
+
+.btn-rol p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-inline: 25px;
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    object-fit: contain;
 }
 
 @media (max-width:860px) {
 
-    .cajaVoluntario,
-    .cajaAdmin {
-        margin: 20px;
-        height: 100px;
-        width: 300px;
+    .selector {
+        padding-block: 50px;
+        gap: 20px;
     }
 
+    .cajas {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .btn-rol {
+        width: 235px;
+        height: 220px;
+    }
+
+    .btn-rol h3 {
+        font-size: 1rem;
+    }
+
+    .btn-rol p {
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 300;
+        padding-inline: 25px;
+    }
+
+    .icono {
+        width: 78px;
+        height: 78px;
+        margin-bottom: 15px;
+        object-fit: contain;
+    }
 
 }
