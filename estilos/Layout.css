@@ -323,7 +323,11 @@ footer {
     }
 }
 
-
+hr{
+    border-style: solid;
+    border-color: #005700;
+    border-width: 2px;
+}
 /* ADAPTADO PARA DISPOSITIVOS MOVILES/TABLET */
 @media (max-width: 860px) {
     
