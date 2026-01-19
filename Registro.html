@@ -68,19 +68,22 @@
 
       <div class="cajas">
 
-        <a class="btn-rol" href="RegistroVoluntarios.html">
+        <div class="btn-rol" data-rol="voluntario">
           <img class="icono" src="src/trabajo-voluntario.png" alt="Voluntario/a">
           <h3>Voluntario/a</h3>
           <p>Quiero participar y ayudar en actividades</p>
-        </a>
+        </div>
 
-        <a class="btn-rol" href="RegistroAdmin.html">
+        <div class="btn-rol" data-rol="entidad">
           <img class="icono" src="src/administracion.png" alt="Entidad organizadora">
           <h3>Entidad organizadora</h3>
           <p>Quiero crear y gestionar actividades</p>
-        </a>
+        </div>
 
       </div>
+
+      <button id="btnContinuar" disabled>CONTINUAR</button>
+
 
     </div>
   </main>
@@ -112,6 +115,34 @@
     </div>
 
   </footer>
+
+  <script>
+    const roles = document.querySelectorAll('.btn-rol');
+    const btnContinuar = document.getElementById('btnContinuar');
+
+    let rolSeleccionado = null;
+
+    roles.forEach(rol => {
+      rol.addEventListener('click', () => {
+        roles.forEach(r => r.classList.remove('activo'));
+        rol.classList.add('activo');
+
+        rolSeleccionado = rol.dataset.rol;
+        btnContinuar.disabled = false;
+      });
+    });
+
+    btnContinuar.addEventListener('click', () => {
+      if (rolSeleccionado === 'voluntario') {
+        window.location.href = 'RegistroVoluntarios.html';
+      }
+
+      if (rolSeleccionado === 'entidad') {
+        window.location.href = 'RegistroAdmin.html';
+      }
+    });
+  </script>
+
 
 </body>
 

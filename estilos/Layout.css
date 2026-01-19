@@ -17,7 +17,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -33,16 +34,31 @@ body {
 }
 
 /* TIPOGRAFÍA GENERAL */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: var(--verde-oscuro);
     margin-bottom: 0.5em;
     line-height: 1.2;
 }
 
-h1 { font-size: 2rem; text-align: center; margin: 30px 0; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.2rem; }
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
 
 p {
     font-size: 1rem;
@@ -64,7 +80,8 @@ a:hover {
 }
 
 /* LISTAS */
-ul, ol {
+ul,
+ol {
     margin-left: 1.5em;
     margin-bottom: 1em;
 }
@@ -83,19 +100,18 @@ img {
 
 /* BOTONES */
 .botones {
+    margin-top: 20px;
     border: none;
     background-color: var(--verde-principal);
     color: var(--blanco);
-    padding: 8px 16px;
-    border-radius: 12px;
+    padding: 14px 60px;
+    border-radius: 30px;
     cursor: pointer;
-    height: 44px;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
 .botones:hover {
-    font-size: 16px;
     background-color: #006e00;
     color: var(--blanco);
 }
@@ -103,6 +119,7 @@ img {
 /* ESTRUCTURA PRINCIPAL */
 main {
     flex: 1;
+    padding-top: 60px; 
 }
 
 /* OPCIONAL: TEXTOS ESPECIALES */
@@ -126,11 +143,33 @@ header {
     align-content: center;
     padding: 0 20px;
     background-color: #005700ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 header img {
     height: 25px;
 }
+
+header.isla {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 80%;
+    max-width: 1200px;
+    background-color: #005700ff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 55px;
+    max-width: 1200px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
 
 /* MENU DE CABECERA */
 
@@ -168,44 +207,126 @@ header img {
 /* FOOTER */
 
 footer {
-    background-color: #005700ff;
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 60px;
-}
-
-#div_footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.colaboracion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border: none;
+    border-radius: 25px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.70)),
+        url('../src/forest-lake-2751979_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-block: 50px;
+    padding: 50px;
+    min-width: 80%;
+}
+
+.colaboracion h2,
+.colaboracion h3 {
+    color: white;
+}
+
+.btn-colab {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn-colab a {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-colab a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+}
+
+.iconos, .rrss {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
     gap: 10px;
 }
 
-#div_footer h3 {
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.iconos img {
+    width: 32px;
+    height: 32px;
 }
 
-#div_footer p,
-#div_footer a {
-    color: white;
-    text-decoration: none;
+.icon p {
+    margin: 0;
 }
 
-footer #div_footer a:hover {
-    opacity: 0.8;
+.copyright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-block: 30px;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: var(--gris-oscuro);
+}
+@media (min-width: 860px) {
+    #crear{
+        border-style: solid;
+        border-radius: 0.5em;
+        border-width: 1px;
+        padding: 6px;
+        padding-inline:20px ;
+        
+    }
+    #crear:hover{
+        transition: 0.5s;
+        background-color: white;
+        color: var(--verde-principal);
+    }
 }
 
 
 /* ADAPTADO PARA DISPOSITIVOS MOVILES/TABLET */
 @media (max-width: 860px) {
-
-    header img {
-        height: 20px;
-    }
-
+    
     /* Mostrar hamburguesa */
     .hamburguesa {
         display: block;
@@ -250,29 +371,56 @@ footer #div_footer a:hover {
 
     /* FOOTER */
 
-    footer {
+    .colaboracion {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        padding: 25px 10px;
+        gap: 25px;
+        border: none;
+        border-radius: 25px;
+        margin-inline: 10px;
+        padding-block: 25px;
+        min-width: 80%;
+    }
+
+    .colaboracion h2,
+    .colaboracion h3 {
+        color: white;
         text-align: center;
     }
 
-    #div_footer {
-        align-items: center;
+    .btn-colab{
+        gap: 1px;
+    }
+    .btn-colab a{
+        font-size: 14px;
+        text-align: center;
     }
 
-    #div_footer h3 {
-        font-size: 1.1rem;
-    }
-
-    #div_footer p,
-    #div_footer a {
+    .icon p {
         font-size: 0.8rem;
     }
 
-    #div_footer.enlaces{
-        display: none;
+    .icon img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .rrss {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+
+    }
+
+    .rrss img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .copyright p {
+        font-size: 11px;
     }
 
 }

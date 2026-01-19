@@ -12,7 +12,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 75px;
     padding-block: 100px;
 }
 
@@ -37,23 +37,23 @@ main {
     padding: 20px;
     text-decoration: none;
     color: #333;
-    border: 3px solid #0059006b;
+    border: none;
     border-radius: 16px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: white;
+
 }
 
 .btn-rol:hover {
-    border-color: #4CAF50;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     transform: translateY(-6px);
 }
 
 .btn-rol p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     padding-inline: 25px;
 }
@@ -64,6 +64,29 @@ main {
     margin-bottom: 15px;
     object-fit: contain;
 }
+
+.btn-rol.activo {
+    border: 3px solid #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+#btnContinuar {
+    margin-top: 40px;
+    padding: 14px 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--verde-principal);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#btnContinuar:enabled {
+    opacity: 1;
+}
+
 
 @media (max-width:860px) {
 

@@ -1,39 +1,45 @@
 main{
     background-color: #EBEEEF;
+    margin-bottom: 2em;
 }
+
 
 #tarjeta{
     background-color: rgb(255, 255, 255);
     margin-inline: 30%;
-    margin-block: 5%;
+    margin-block: 2%;
     border-radius: 1em;
     overflow: hidden;
 }
+
 #banner{
         background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(43, 43, 43, 0.3)),
             url(../src/ciclismo.jpg) center center / cover no-repeat;
         
         width: 100%;
-        min-height: 30em;
+        min-height: 25em;
         position: relative;
         z-index: 1;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        
+        align-content: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        padding: 70px 15px 74px 15px;
+        
         color: white;
         filter: blur(0px);
         overflow: hidden;
-        
+     
 }
 #tarjeta h1{
     color: white;
     filter: blur(0px);
+    
+    
 }
+
+
+
 #tarjeta-info{
     display: flex;
     flex-direction: column;
@@ -45,9 +51,10 @@ main{
 .icoytxt{
     display: flex;
     align-items: center;
-    width: 27%;
+    /*width: 27%;*/
 }
 .icoytxt p{margin: 0;margin-left: 1rem;}
+
 hr{
     width: 80%;
     align-self: center;
@@ -60,6 +67,35 @@ hr{
     margin-top: 2em;
     padding-inline: 3.5em;
 }
+@media (max-width:1250px) {
+    #resumen{padding-inline: 0.25em;}
+
+    #tarjeta{
+        background-color: rgb(255, 255, 255);
+        margin-inline: 25%;
+        margin-block: 2%;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+}
+@media (max-width:860px) {
+    #banner{min-height: 20em;}
+    #tarjeta{
+        background-color: rgba(255, 255, 255, 0);
+        margin-inline: 0%;
+        margin-block: 0%;
+        border-radius: 0%;
+        overflow: hidden;
+}
+    main{
+    background-color: #ffffff;
+}
+    .icoytxt{/*width: 15%;*/}
+    .icoytxt p{margin: 0;margin-left: 10px;font-size: 10pt;}
+    #resumen{
+        padding-inline: 0;
+    }
+}
 #resumen div:nth-child(1){justify-content: left;} 
 #resumen div:nth-child(2){justify-content: center;} 
 #resumen div:nth-child(3){justify-content: right;} 
@@ -67,7 +103,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 1em;
+    margin-bottom: 1em;
 }
 #inscripcion p{
     margin-block: 0;
