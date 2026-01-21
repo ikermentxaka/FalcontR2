@@ -26,21 +26,34 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <!-- LOGO -->
-        <div>
+        <div class="logo">
             <a href="index.html">
                 <img src="src/Logo_VV_v1_Blanco.png" alt="Logo">
             </a>
         </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="hamburguesa" aria-label="Menú">
+            ☰
+        </button>
+
         <!-- MENU -->
         <div class="menu">
-            <a href="Mantenimiento.html">VOLUNTARIADO</a>
-            <a href="SobreNosotros.html">SOBRE NOSOTROS</a>
-            <a href="Contacto.html">CONTACTO</a>
+            <a href="SobreNosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a id="crear" href="CrearEvento.html">Crear evento</a>
+            <!-- LOGIN SOLO MÓVIL -->
+            <a href="TrabajaNosotros.html" class="login-mobile">Trabaja con nosotros</a>
+            <a href="IniciarSesion.html" class="login-mobile">Iniciar sesión</a>
+
+
+            <a href="EN/index.html">EN</a>
         </div>
-        <!-- ICONO INICIO DE SESION -->
-        <div>
+
+        <!-- ICONO LOGIN SOLO DESKTOP -->
+        <div class="login-desktop">
             <a href="IniciarSesion.html">
                 <img src="src/PerfilInicioSesion.png" alt="Perfil">
             </a>
@@ -133,29 +146,61 @@
         </div>
     </main>
 
-    <footer>
-        <div class="div_footer">
-            <h3>ENLACES</h3>
-            <a href="TrabajaNosotros.html">Trabaja con nosotros</a>
-            <a href="RegistroVoluntarios.html">Hazte Voluntario</a>
+<footer>
+
+        <div class="colaboracion">
+            <h2>Colabora con nosotros y sé parte del cambio.</h3>
+                <h3>Juntos hacemos crecer un futuro más verde.</h4>
+                    <div class="btn-colab">
+                        <a class="botones" href="RegistroVoluntarios.html">Unete al voluntariado</a>
+                        <a class="botones" href="TrabajaNosotros.html">Trabaja con nosotros</a>
+                    </div>
+        </div>
+        <div class="contacto">
+            <div class="iconos">
+                <a class="icon"><img src="src/movil.png">
+                    <p>+34 123 45 67 89</p>
+                </a>
+                <a href="mailto:correoelectronico@gmail.com" class="icon"><img src="src/gmail.png">
+                    <p>voluntariadoverde@gmail.com</p>
+                </a>
+                <a  href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" class="icon"><img src="src/mapa.png">
+                    <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
+                </a>
+            </div>
+            <div class="rrss">
+                <a href="https://x.com/?lang=es"><img src="src/insta.png"></a>
+                <a href="https://www.facebook.com/?locale=es_ES"><img src="src/facebook.png"></a>
+                <a href="https://www.instagram.com/"><img src="src/twitter.png"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Voluntariado Verde. Todos los derechos reservados.</p>
         </div>
 
-        <div class="div_footer">
-            <h3>CONTACTO</h3>            <a
-                href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D">
-                <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
-            </a>
-            <p>+34 123 45 67 89</p>
-            <a href="mailto:correoelectronico@gmail.com">correoelectronico@gmail.com</a>
-        </div>
 
-        <div class="div_footer">
-            <h3>REDES SOCIALES</h3>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://x.com/">X</a>
-        </div>
     </footer>
+    <script>
+        const hamburguesa = document.querySelector('.hamburguesa');
+        const menu = document.querySelector('.menu');
+
+        hamburguesa.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+
+        const header = document.querySelector("header");
+
+        function handleScroll() {
+            if (window.innerWidth > 860 && window.scrollY > 250) {
+                header.classList.add("isla");
+            } else {
+                header.classList.remove("isla");
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+    </script>
 </body>
 
 </html

@@ -1,123 +1,150 @@
-/* CONTACTO.HTML*/
-
-main {
+.contacto-wrap {
     display: flex;
     flex-direction: row;
-    margin-inline: 15%;
-    margin-block: 5%;
-    padding: 5%;
-    justify-content: space-between;
-    border-radius: 15px;
-    border: 1px #005900ff solid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-block: 200px;
+    gap: 50px;
+    margin-inline: 10px;
 }
 
-#info {
+.info {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    text-align: justify;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    padding: 50px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+
 }
 
-.img {
+.logoContacto img {
+    width: 250px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.contacto-info {
     display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-#contacto_info a,
-#contacto_info p {
-    text-align: left;
-    text-decoration: none;
-    color: rgb(99, 99, 99);
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 25px;
 }
 
 form {
+
+    width: 100%;
+    max-width: 700px;
+
     display: flex;
     flex-direction: column;
-    width: 40%;
+    gap: 20px;
 }
 
-form label{
-    text-align: center;
+form h1 {
+    font-size: 2.5rem;
+    text-align: left;
 }
 
-input, select {
-    outline: none;
-    padding-block: 7px;
-    padding-left: 15px;
-    padding-right: 10px;
-    color: rgb(86, 86, 86);
-    margin: 10px;
-    backdrop-filter: blur(100px);
-    font-family: "Poppins", sans-serif;
-
-    border-radius: 100px;
-    border: 1px #005900ff solid;
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 24px;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    resize: vertical;
 }
 
 textarea {
-    border: none;
-    outline: none;
-    padding: 15px;
-    color: rgb(86, 86, 86);
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(100px);
-    font-family: "Poppins", sans-serif;
-    border-radius: 15px;
-    border: 1px #005900ff solid;
     resize: vertical;
-    overflow: hidden;
-    height: 15vh;
+    min-height: min-content;
 }
 
-input[type="file"]{
-    border: none;
-    text-align: center;
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid grey;
+    /* mantiene el mismo borde */
 }
 
-input[type="file"]::file-selector-button {
-    border: 1px rgb(86, 86, 86) solid;
-    background-color: transparent;
-    color: rgb(86, 86, 86);
-    padding: 6px 12px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-family: "Poppins", sans-serif;
-    font-weight: 7300;
+.fila {
+    display: flex;
+    gap: 20px;
+    width: 100%;
 }
 
-iframe{
-    border-radius: 10px;
+.botones {
+    width: 40%;
+    min-width: 100px;
+    font-size: 24px;
 }
 
 @media(max-width: 860px) {
-
-    #info {
-        width: 100%;
-        
+    .contacto-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 10px;
+        gap: 0;
     }
 
-    form {
-        width: 100%;
-
-    }
-
-    main{
-        margin-inline: 15px;
+    .contacto-info {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
     }
-    input{
-        font-size: 1rem;
-    }
-    textarea{
-        font-size: 1rem;
+    .localizacion p{
+        text-align: center;
+
     }
 
-    .img{
+    .info,
+    form {
+        max-width: 100%;
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    form h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input,
+    textarea,
+    .botones {
+        font-size: 18px;
+    }
+
+    .fila {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .botones {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .logoContacto {
         display: none;
     }
+
 }
