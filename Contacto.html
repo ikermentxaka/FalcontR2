@@ -151,34 +151,34 @@
 
 
   </footer>
-<script>
-  const hamburguesa = document.querySelector('.hamburguesa');
-  const menu = document.querySelector('.menu');
-  const header = document.querySelector("header");
-  const logo = document.getElementById("logoHeader"); // Asegúrate de poner id="logoHeader" en tu img
+  <script>
+    const hamburguesa = document.querySelector('.hamburguesa');
+    const menu = document.querySelector('.menu');
+    const header = document.querySelector("header");
+    const logo = document.getElementById("logoHeader"); // Asegúrate de poner id="logoHeader" en tu img
 
-  // Toggle menú hamburguesa
-  hamburguesa.addEventListener('click', () => {
-    menu.classList.toggle('activo');
-  });
+    // Toggle menú hamburguesa
+    hamburguesa.addEventListener('click', () => {
+      menu.classList.toggle('activo');
+    });
 
-  // Función que maneja scroll y cambio de logo
-  function handleScroll() {
-    if (window.innerWidth > 860 && window.scrollY > 250) {
-      header.classList.add("isla");
-      logo.src = "src/IconoBlanco.png"; // Logo cuando header está "isla"
-    } else {
-      header.classList.remove("isla");
-      logo.src = "src/Logo_VV_v1_Blanco.png"; // Logo original
+    // Función que maneja scroll y cambio de logo
+    function handleScroll() {
+      if (window.innerWidth > 860 && window.scrollY > 250) {
+        header.classList.add("isla");
+        logo.src = "src/IconoBlanco.png"; // Logo cuando header está "isla"
+      } else {
+        header.classList.remove("isla");
+        logo.src = "src/Logo_VV_v1_Blanco.png"; // Logo original
+      }
     }
-  }
 
-  window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
-  // Ejecutar al cargar para verificar estado inicial
-  handleScroll();
-</script>
+    // Ejecutar al cargar para verificar estado inicial
+    handleScroll();
+  </script>
 
 
 </body>
