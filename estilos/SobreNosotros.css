@@ -1,71 +1,39 @@
 /* SOBRENOSOTROS.HTML */
-
-.container_conocenos {
-    display: flex;
-    flex-direction: column;
-}
-
-#descripcion_conocenos {
-    margin-inline: 20%;
-    margin-block: 30px;
-}
-
-#descripcion_conocenos p {
-    margin-block: 10px;
-    text-align: justify;
-}
-
-#boton_conocenos {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
-
-
-/* ===========================================
-   SOBRE NOSOTROS - Estilos específicos
-   =========================================== */
-
-/* Contenedor principal con espaciado lateral */
-.container_conocenos {
-    max-width: 1500px;
-    margin: 0 auto;
+.seccion-historia,
+.tarjetas-mision,
+.seccion-unirse {
+    max-width: 1600px;
+    margin: 0 auto; 
+    box-sizing: border-box;
 }
 
 .hero-conocenos {
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 20rem;
-    margin-top: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-/* Imagen principal */
-.imagen-principal {
-    flex: 0 0 450px;
-    text-align: center;
-    margin-left: 0; /* Quitar el margin-left anterior */
-}
-
-.imagen-principal img {
-    max-width: 100%;
-    width: 350px;
+.texto-principal {
+    background-color: #e8f5e9;
+    border-left: 6px solid #358C0A;
+    padding: 2rem 3rem;
+    max-width: 1000px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: justify;
 }
 
-#descripcion_conocenos {
-    flex: 1;
-    margin-inline: 0; /* Quitar márgenes laterales */
-    margin-block: 0;
-    margin-left: 1rem;
-
+.texto-principal p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-
+.texto-principal strong {
+    font-size: 1.2rem;
+    color: #358C0A;
+}
 
 /* Sección Historia */
 .seccion-historia {
@@ -111,7 +79,6 @@
     line-height: 1.7;
 }
 
-/* Tarjeta Misión - Verde */
 .tarjeta-mision {
     background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
 }
@@ -209,6 +176,74 @@
     margin-left: 1rem;
 }
 
+.seccion-ods {
+    padding-block: 70px;
+    text-align: center;
+}
+
+.seccion-ods h2 {
+    margin-bottom: 70px;
+    color: #2e7d32;
+    font-size: 1.8rem;
+}
+
+.ods-contenedor {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 20px;
+}
+
+.ods-item img {
+    width: 240px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.ods-item a {
+    display: inline-block;
+}
+
+.ods-item img {
+    width: 210px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.7s ease;
+    border-radius: 8px;
+}
+
+.ods-item:hover img {
+    transform: scale(1.08) translateY(-6px);
+}
+
+.ods-8:hover img {
+    box-shadow: 0 20px 35px rgba(132, 0, 56, 0.45);
+}
+
+.ods-10:hover img {
+    box-shadow: 0 20px 35px rgba(240, 5, 232, 0.45);
+}
+
+.ods-11:hover img {
+    box-shadow: 0 20px 35px rgba(255, 140, 10, 0.45);
+}
+.ods-13:hover img {
+    box-shadow: 0 20px 35px rgba(53, 140, 10, 0.45);
+}
+strong{
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+em{
+    font-size: 17px;
+    font-style: italic;
+    color: #2e7d32;
+
+}
+
 /* Responsive */
 @media (max-width: 860px) {
     .container_conocenos {
@@ -240,12 +275,6 @@
     .tarjetas-mision {
         grid-template-columns: 1fr;
     }
-}
-
-
-
-@media(max-width: 860px) {
-
     #descripcion_conocenos {
         margin-inline: 30px;
         margin-block: 0px;
@@ -253,8 +282,50 @@
 
     #boton_conocenos {
         padding: 50px;
-        margin-bottom: 1em;
-
     }
 
+    #seccion-ods h2{
+        font-size: 0.2rem;
+    }
+    .ods-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+
+    .ods-item {
+        background-color: #ffffff;
+        padding: 30px 36px;
+        border-radius: 14px;
+        width: 100%;
+        max-width: 220px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 6px 14px rgba(46, 42, 42, 0.08);
+    }
+
+    .ods-item img {
+        width: 160px;
+    }
+
+    .ods-item:hover img {
+        transform: none;
+    }
+
+    .seccion-ods{
+        padding-top: 20px;
+    }
+    .seccion-ods h2, .seccion-unirse h2{
+        margin: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .texto-principal {
+        border-left: none;
+    }
+    .texto-principal p{
+        font-size: 1.1rem;
+    }
 }
