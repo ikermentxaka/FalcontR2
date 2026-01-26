@@ -27,16 +27,16 @@ h2 {
 }
 
 main {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #ebeeef 0%, #ebeeef 80%, #ffffff 100%);
+    background: linear-gradient(to bottom, #ebeeef 0%, #ebeeef 95%, #ffffff 100%); 
 }
 
 .form-wrap {
+    margin-block: 100px;
     width: 670px;
     background: #ffffff;
     border-radius: 10px;
