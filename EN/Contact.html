@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
+<html lang="en">
+
+<head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="src/favicon.ico" />
-  <title>Green Volunteering</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/src/favicon.ico" />
+  <title>Green Volunteering</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Poppins font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="/estilos/General.css">
+  <!-- CSS Files -->
   <link rel="stylesheet" href="/estilos/Layout.css">
   <link rel="stylesheet" href="/estilos/Contacto.css">
 
@@ -21,63 +27,137 @@
 <body>
 
   <header>
-
-    <div>
+    <!-- LOGO -->
+    <div class="logo">
       <a href="index.html">
-        <img src="/src/Logo_VV_v1_Blanco.png" alt="Logo">
+        <img id="logoHeader" src="/src/Logo_VV_v1_Blanco.png" alt="Logo">
       </a>
     </div>
+
+    <!-- HAMBURGER BUTTON -->
+    <button class="hamburguesa" aria-label="Menu">
+      ☰
+    </button>
+
+    <!-- MENU -->
     <div class="menu">
-      <a href="Maintenance.html">VOLUNTEERING</a> <a href="AboutUs.html">ABOUT US</a> <a href="Contact.html">CONTACT</a> </div>
-    <div>
-      <a href="login.html">
-        <img src="/src/PerfilInicioSesion.png" alt="Profile"> </a>
+      <a href="AboutUs.html">About us</a>
+      <a href="Contact.html">Contact</a>
+      <a id="crear" href="EventCreate.html">Create event</a>
+      <!-- LOGIN MOBILE ONLY -->
+      <a href="AboutUs.html" class="login-mobile">Work with us</a>
+      <a href="login.html" class="login-mobile">Log in</a>
+
+      <a href="/index.html">ES</a>
     </div>
 
+    <!-- LOGIN ICON DESKTOP ONLY -->
+    <div class="login-desktop">
+      <a href="login.html">
+        <img src="/src/PerfilInicioSesion.png" alt="Profile">
+      </a>
+    </div>
   </header>
 
   <main>
 
     <div id="info">
 
-      <h1>Contact Us</h1> <div id="contacto_descripcion">
-        <p>If you need more information or have any questions, we will be happy to assist you.</p> <p>Fill out this form so we can get in touch with you.</p> </div>
+      <h1>Contact us</h1>
+
+      <div id="contacto_descripcion">
+        <p>If you need more information or have any questions, we will be happy to help you.</p>
+        <p>Fill out this form so we can get in touch with you.</p>
+      </div>
 
       <div id="contacto_info">
         <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
           target="_blank">
-          <p>31 Licenciado Poza St, 48011 Bilbao, Biscay</p> </a>
+          <p>Licenciado Poza Kalea 31, 48011 Bilbao, Biscay</p>
+        </a>
         <p>+34 123 45 67 89</p>
-        <a href="mailto:correoelectronico@gmail.com">emailaddress@gmail.com</a> </div>
+        <a href="mailto:correoelectronico@gmail.com">correoelectronico@gmail.com</a>
+      </div>
 
     </div>
 
     <form>
 
-      <h1>Form</h1> <input type="text" id="fname" class="inputcont" name="funame" placeholder="Name"> <input type="text" id="femail" class="inputcont" name="femail" placeholder="Email"> <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Subject"> <textarea id="fmsg" class="inputcont" name="Text1" rows="1" placeholder="Write your message..."></textarea> <input type="submit" class="botones" value="Send"> </form>
+      <h1>Form</h1>
+
+      <input type="text" id="fname" class="inputcont" name="funame" placeholder="Name">
+      <input type="text" id="femail" class="inputcont" name="femail" placeholder="Email">
+      <input type="text" id="fasunto" class="inputcont" name="fasunto" placeholder="Subject">
+
+      <textarea id="fmsg" class="inputcont" name="Text1" rows="1" placeholder="Write your message..."></textarea>
+
+      <input type="submit" class="botones" value="Send">
+
+    </form>
 
   </main>
 
   <footer>
 
-    <div class="div_footer">
-      <h3>LINKS</h3> <a href="WorkUs.html">Work with us</a> <a href="RegistreVoluntaris.html">Become a Volunteer</a> </div>
-
-    <div class="div_footer">
-      <h3>CONTACT</h3> <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
-        target="_blank">
-        <p>31 Licenciado Poza St, 48011 Bilbao, Biscay</p> </a>
-      <p>+34 123 45 67 89</p>
-      <a href="mailto:correoelectronico@gmail.com">emailaddress@gmail.com</a>
+    <div class="colaboracion">
+      <h2>Collaborate with us and be part of the change.</h2>
+      <h3>Together we grow a greener future.</h3>
+      <div class="btn-colab">
+        <a class="botones" href="RegistreVoluntaris.html">Join the volunteering</a>
+        <a class="botones" href="WorkUs.html">Work with us</a>
+      </div>
     </div>
-
-    <div class="div_footer">
-      <h3>SOCIAL MEDIA</h3> <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="https://x.com/" target="_blank">X</a>
+    <div class="contacto">
+      <div class="iconos">
+        <a class="icon"><img src="/src/movil.png">
+          <p>+34 123 45 67 89</p>
+        </a>
+        <a href="mailto:correoelectronico@gmail.com" class="icon"><img src="/src/gmail.png">
+          <p>voluntariadoverde@gmail.com</p>
+        </a>
+        <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+          class="icon"><img src="/src/mapa.png">
+          <p>Licenciado Poza Kalea 31, 48011 Bilbao, Biscay</p>
+        </a>
+      </div>
+      <div class="rrss">
+        <a href="https://x.com/?lang=es"><img src="/src/insta.png"></a>
+        <a href="https://www.facebook.com/?locale=es_ES"><img src="/src/facebook.png"></a>
+        <a href="https://www.instagram.com/"><img src="/src/twitter.png"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 Green Volunteering. All rights reserved.</p>
     </div>
 
   </footer>
 
+  <script>
+    const hamburguesa = document.querySelector('.hamburguesa');
+    const menu = document.querySelector('.menu');
+    const header = document.querySelector("header");
+    const logo = document.getElementById("logoHeader");
+
+    hamburguesa.addEventListener('click', () => {
+      menu.classList.toggle('activo');
+    });
+
+    function handleScroll() {
+      if (window.innerWidth > 860 && window.scrollY > 250) {
+        header.classList.add("isla");
+        logo.src = "/src/IconoBlanco.png";
+      } else {
+        header.classList.remove("isla");
+        logo.src = "/src/Logo_VV_v1_Blanco.png";
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+
+    handleScroll();
+  </script>
+
 </body>
+
 </html>
