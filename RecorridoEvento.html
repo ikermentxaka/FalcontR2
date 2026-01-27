@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="src/favicon.ico" />
+    <title>Voluntariado Verde</title>
+
+    <!-- Conexión previa con Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Enlace a la fuente Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="estilos/Layout.css">
+    <link rel="stylesheet" href="estilos/CrearEvento.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">
+                <img id="logoHeader" src="src/Logo_VV_v1_Blanco.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="hamburguesa" aria-label="Menú">
+            ☰
+        </button>
+
+        <!-- MENU -->
+        <div class="menu">
+            <a href="SobreNosotros.html">Sobre nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+            <a id="crear" href="CrearEvento.html">Crear evento</a>
+            <!-- LOGIN SOLO MÓVIL -->
+            <a href="TrabajaNosotros.html" class="login-mobile">Trabaja con nosotros</a>
+            <a href="IniciarSesion.html" class="login-mobile">Iniciar sesión</a>
+
+
+            <a href="EN/index.html">EN</a>
+        </div>
+
+        <!-- ICONO LOGIN SOLO DESKTOP -->
+        <div class="login-desktop">
+            <a href="IniciarSesion.html">
+                <img src="src/PerfilInicioSesion.png" alt="Perfil">
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="indicador-pasos">
+            <div class="paso completado">
+                <span>1</span>
+                <p>Datos</p>
+            </div>
+            <div class="paso completado">
+                <span>2</span>
+                <p>Descripción</p>
+            </div>
+            <div class="paso activo">
+                <span>3</span>
+                <p>Recorrido</p>
+            </div>
+        </div>
+
+        <div class="enuncidado">
+            <h1>Recorrido del evento</h1>
+            <p>Indica salida, llegada y puntos intermedios con su kilometraje.</p>
+        </div>
+
+        <form id="recorridoForm">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="kmSalida">Nº km de Salida</label>
+                    <input type="number" id="kmSalida" name="kmSalida" placeholder="0" min="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="kmLlegada">Nº km de Llegada</label>
+                    <input type="number" id="kmLlegada" name="kmLlegada" placeholder="Ej: 42" min="0" step="0.1">
+                </div>
+            </div>
+
+            <div class="puntos-container">
+                <div class="puntos-header">
+                    <h3>Puntos Intermedios</h3>
+                    <button type="button" class="btn-agregar" id="btnAgregar">+ Agregar Punto</button>
+                </div>
+                <div id="puntosLista">
+                    <div class="empty-message" id="emptyMessage">
+                        No hay puntos intermedios. Haz clic en " + Agregar Punto" para anadir uno.
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="botones">Crear Recorrido</button>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <div class="colaboracion">
+            <h2>Colabora con nosotros y sé parte del cambio.</h2>
+            <h3>Juntos hacemos crecer un futuro más verde.</h3>
+            <div class="btn-colab">
+                <a class="botones" href="RegistroVoluntarios.html">Unete al voluntariado</a>
+                <a class="botones" href="TrabajaNosotros.html">Trabaja con nosotros</a>
+            </div>
+        </div>
+        <div class="contacto">
+            <div class="iconos">
+                <a class="icon"><img src="src/movil.png">
+                    <p>+34 123 45 67 89</p>
+                </a>
+                <a href="mailto:correoelectronico@gmail.com" class="icon"><img src="src/gmail.png">
+                    <p>voluntariadoverde@gmail.com</p>
+                </a>
+                <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+                    class="icon"><img src="src/mapa.png">
+                    <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
+                </a>
+            </div>
+            <div class="rrss">
+                <a href="https://x.com/?lang=es"><img src="src/insta.png"></a>
+                <a href="https://www.facebook.com/?locale=es_ES"><img src="src/facebook.png"></a>
+                <a href="https://www.instagram.com/"><img src="src/twitter.png"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Voluntariado Verde. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        // Contador de puntos
+        let contadorPuntos = 0;
+
+        // Referencias DOM
+        const puntosLista = document.getElementById('puntosLista');
+        const emptyMessage = document.getElementById('emptyMessage');
+        const btnAgregar = document.getElementById('btnAgregar');
+
+        // Función para agregar un nuevo punto
+        function agregarPunto() {
+            contadorPuntos++;
+
+            if (emptyMessage) emptyMessage.style.display = 'none';
+
+            const puntoDiv = document.createElement('div');
+            puntoDiv.className = 'punto-item';
+            puntoDiv.id = 'punto-' + contadorPuntos;
+
+            puntoDiv.innerHTML = `
+        <button type="button" class="btn-eliminar">x</button>
+        <div class="form-row">
+            <div class="form-group tipo">
+                <label>Tipo de Punto</label>
+                <select name="tipoPunto_${contadorPuntos}">
+                    <option value="">Seleccionar tipo...</option>
+                    <option value="avituallamiento">Avituallamiento</option>
+                    <option value="punto_control">Punto de Control</option>
+                </select>
+            </div>
+            <div class="form-group km">
+                <label>Kilometro</label>
+                <input type="number" name="kmPunto_${contadorPuntos}" placeholder="Km" min="0" step="0.1">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Nombre del Punto (opcional)</label>
+            <input type="text" name="nombrePunto_${contadorPuntos}" placeholder="Ej: Plaza central">
+        </div>
+    `;
+
+            puntosLista.appendChild(puntoDiv);
+
+            // Añadir evento al botón eliminar
+            puntoDiv.querySelector('.btn-eliminar').addEventListener('click', () => {
+                eliminarPunto(puntoDiv.id);
+            });
+        }
+
+        // Función para eliminar un punto
+        function eliminarPunto(id) {
+            const punto = document.getElementById(id);
+            if (punto) punto.remove();
+
+            if (puntosLista.querySelectorAll('.punto-item').length === 0 && emptyMessage) {
+                emptyMessage.style.display = 'block';
+            }
+        }
+
+        // Evento del botón agregar
+        btnAgregar.addEventListener('click', agregarPunto);
+    </script>
+</body>
+
+</html>
