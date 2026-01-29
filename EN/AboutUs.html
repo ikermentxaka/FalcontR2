@@ -29,7 +29,7 @@
         <!-- LOGO -->
         <div class="logo">
             <a href="index.html">
-                <img src="src/Logo_VV_v1_Blanco.png" alt="Logo">
+                <img src="../src/Logo_VV_v1_Blanco.png" alt="Logo">
             </a>
         </div>
 
@@ -54,7 +54,7 @@
         <!-- DESKTOP LOGIN ICON -->
         <div class="login-desktop">
             <a href="Register.html">
-                <img src="src/PerfilInicioSesion.png" alt="Profile">
+                <img src="../src/PerfilInicioSesion.png" alt="Profile">
             </a>
         </div>
     </header>
@@ -147,25 +147,25 @@
             <div class="ods-contenedor">
                 <div class="ods-item ods-8">
                     <a href="https://www.pactomundial.org/ods/8-trabajo-decente-y-crecimiento-economico/">
-                        <img src="src/ods-8.jpg" alt="SDG 8">
+                        <img src="../src/ods-8.jpg" alt="SDG 8">
                     </a>
                 </div>
 
                 <div class="ods-item ods-10">
                     <a href="https://www.pactomundial.org/ods/10-reduccion-de-las-desigualdades/">
-                        <img src="src/ods-10.jpg" alt="SDG 10">
+                        <img src="../src/ods-10.jpg" alt="SDG 10">
                     </a>
                 </div>
 
                 <div class="ods-item ods-11">
                     <a href="https://www.pactomundial.org/ods/11-ciudades-y-comunidades-sostenibles/">
-                        <img src="src/ods-11.jpg" alt="SDG 11">
+                        <img src="../src/ods-11.jpg" alt="SDG 11">
                     </a>
                 </div>
 
                 <div class="ods-item ods-13">
                     <a href="https://www.pactomundial.org/ods/13-accion-por-el-clima/">
-                        <img src="src/ods-13.jpg" alt="SDG 13">
+                        <img src="../src/ods-13.jpg" alt="SDG 13">
                     </a>
                 </div>
             </div>
@@ -178,41 +178,54 @@
             <h2>Collaborate with us and be part of the change.</h2>
             <h3>Together we grow a greener future.</h3>
             <div class="btn-colab">
-                <a class="botones" href="RegistroVoluntarios.html">Join the volunteer program</a>
-                <a class="botones" href="TrabajaNosotros.html">Work with us</a>
+                <a class="botones" href="RegistreVoluntaris.html">Join the volunteer program</a>
+                <a class="botones" href="WorkUs.html">Work with us</a>
             </div>
         </div>
-
         <div class="contacto">
             <div class="iconos">
-                <a class="icon">
-                    <img src="src/movil.png">
+                <a class="icon"><img src="../src/movil.png">
                     <p>+34 123 45 67 89</p>
                 </a>
-
-                <a href="mailto:correoelectronico@gmail.com" class="icon">
-                    <img src="src/gmail.png">
+                <a href="mailto:correoelectronico@gmail.com" class="icon"><img src="../src/gmail.png">
                     <p>voluntariadoverde@gmail.com</p>
                 </a>
-
-                <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/"
-                    class="icon">
-                    <img src="src/mapa.png">
-                    <p>Licenciado Poza Kalea 31, 48011 Bilbao, Biscay</p>
+                <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+                    class="icon"><img src="../src/mapa.png">
+                    <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
                 </a>
             </div>
-
             <div class="rrss">
-                <a href="https://x.com/?lang=es"><img src="src/insta.png"></a>
-                <a href="https://www.facebook.com/?locale=es_ES"><img src="src/facebook.png"></a>
-                <a href="https://www.instagram.com/"><img src="src/twitter.png"></a>
+                <a href="https://x.com/?lang=es"><img src="../src/insta.png"></a>
+                <a href="https://www.facebook.com/?locale=es_ES"><img src="../src/facebook.png"></a>
+                <a href="https://www.instagram.com/"><img src="../src/twitter.png"></a>
             </div>
         </div>
-
         <div class="copyright">
             <p>© 2026 Green Volunteering. All rights reserved.</p>
         </div>
 
     </footer>
+    <script>
+        const hamburguesa = document.querySelector('.hamburguesa');
+        const menu = document.querySelector('.menu');
+
+        hamburguesa.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+
+        const header = document.querySelector("header");
+
+        function handleScroll() {
+            if (window.innerWidth > 860 && window.scrollY > 250) {
+                header.classList.add("isla");
+            } else {
+                header.classList.remove("isla");
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+    </script>
 </body>
 </html>
