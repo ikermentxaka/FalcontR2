@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --negroD: rgb(34, 34, 34);
+
+  }
+main{
+    background-color: #EBEEEF;
+}
+#panelperfil h1{
+    color: white;
+    text-align: left;
+    font-size: 3vw;
+    padding-block: 0.1em;
+    margin:0;
+}
+#panelperfil hr{
+    border-color: rgb(158, 158, 158);
+    border-width: 1px;
+}
+#panelperfil{
+    margin-block: 9vh;
+    align-items: center;
+    display: flex;
+    margin-inline: 20vw;
+    height: 70vh;
+    border-radius: 1em;
+    overflow: hidden;
+}
+#usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:var(--negroD);
+    color: white;
+    width: 40%;
+    height: 100%;
+    padding: 1em;
+}
+#usuariobottom{
+    height: 100%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#usuario p{
+    color: rgb(235, 235, 235);
+}
+#editar p{
+    margin-top: 0;
+    text-align: right;
+    
+}
+#eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(14, 14, 14);
+    width: 60%;
+    height: 100%;
+    padding-inline: 2vw;
+    padding-block: 1vw;
+    
+}
+#evInscr{
+    overflow-y: auto; 
+    scrollbar-width: thin;
+}
+#evAsist{
+    overflow-y: auto; 
+    scrollbar-width: thin;   
+}
+#eventos h2{
+    color: var(--negroD);
+}
+#eventos p{
+    margin-block: 5px;
+}
+#inscritos{
+    margin-top: 1em;
+
+}
+#asistidos{
+
+}
+
+#inscritos::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #inscritos::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  #inscritos::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+#media{
+    display: flex;
+    justify-content: right;
+    
+}
