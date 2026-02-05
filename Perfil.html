@@ -83,29 +83,32 @@
         </div>
 
             <div id="eventos">
+                <div id="top">
+                <div id="pestanas">
+                    <h2 id="ins">Inscrito</h2>
+                    <h2 id="asis">Asistidos</h2>
+                </div>
                 <div id="inscritos">
-                    <h2>Eventos en los que está inscrito</h2>
-                    <div id="evInscr">
+                    
+                    <div id="evInscr" class="eventosMostrados">
+                    <p>Bilbao Night Marathon 2026</p><hr>
                     <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p>
                 </div>
                 </div>
                 <div id="asistidos">
-                    <h2>Eventos a los que ha asistido</h2>
-                    <div id="evAsist">
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                    <p>Bilbao Night Marathon</p>
+                    <!--<h2>Asistidos</h2>-->
+                    <div id="evAsist" class="eventosMostrados">
+                    <p>Bilbao Night Marathon 2022</p><hr>
+                    <p>Bilbao Night Marathon 2021</p><hr>
+                    <p>Bilbao Night Marathon 2020</p><hr>
+                    <p>Bilbao Night Marathon 2019</p><hr>
                 </div>
                 </div>
+            </div>
                 <div id="media">
                     <p>Valoración media</p>
-                    <img src="" alt="">
+                    <img src="src/Calificaciones/Nota4.png" alt="4">
+                    
                 </div>
             </div>
         </div>
@@ -171,3 +174,32 @@
 </body>
 
 </html>
+
+<script>
+    
+    const botonInscrito = document.getElementById("ins");
+    const botonAsistidos = document.getElementById("asis");
+    const divEvInscr = document.getElementById("inscritos");
+    const divEvAsis = document.getElementById("asistidos");
+    
+    <!--Al inicio-->
+    divEvInscr.style.display ="block";
+    divEvAsis.style.display = "none";
+    botonInscrito.style.color = "#222222";
+    botonAsistidos.style.color = "#EBEEEF"
+
+    botonInscrito.addEventListener("click",() => {
+    divEvInscr.style.display ="block";
+    divEvAsis.style.display = "none";
+    botonInscrito.style.color = "#222222";
+    botonAsistidos.style.color = "#EBEEEF";});
+
+    botonAsistidos.addEventListener("click",() => {
+    divEvAsis.style.display ="block";
+    divEvInscr.style.display = "none";
+    botonInscrito.style.color = "#EBEEEF";
+    botonAsistidos.style.color = "#222222";});
+
+
+ 
+</script>
