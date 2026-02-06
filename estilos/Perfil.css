@@ -13,7 +13,7 @@ main{
     color: white;
     text-align: left;
     font-size: 3vw;
-    padding-block: 0.1em;
+    padding-left: 5px;
     margin:0;
 }
 #panelperfil hr{
@@ -37,7 +37,7 @@ main{
     color: white;
     width: 40%;
     height: 100%;
-    padding: 1em;
+    padding: 3vh;
 }
 #usuariobottom{
     height: 100%;
@@ -52,7 +52,7 @@ main{
 #editar p{
     margin-top: 0;
     text-align: right;
-    
+    margin-bottom: 0;
 }
 #eventos{
     display: flex;
@@ -63,7 +63,7 @@ main{
     width: 60%;
     height: 100%;
     padding-inline: 2vw;
-    padding-block: 1vw;
+    padding-block: 3vh;
     
 }
 #evInscr{
@@ -77,6 +77,8 @@ main{
 #eventos h2{
     color: var(--negroD);
     font-size: 3vw;
+    margin-bottom: 0;
+    padding-left: 5px;
 }
 
 #eventos h2:hover{
@@ -85,18 +87,31 @@ main{
 #pestanas{
     display: flex;
     gap: 2em;
-    padding-top: 3vh;
+    
 }
 #eventos p{
     margin-block: 5px;
 }
 #inscritos{
-    margin-top: 1em;
+    
 }
 .eventosMostrados{
 
 }
+.evento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.evento img{
+    padding-left: 1em;
+    width: 30%;
+    height: fit-content;
+    display: block;
+    justify-self: right;
+    
 
+}
 #inscritos::-webkit-scrollbar {
     width: 8px;
   }
@@ -115,10 +130,10 @@ main{
     align-items: center;
     justify-content: right;
 }
-#media img{
+#panelperfil img{
     padding-left: 1em;
     width: 30%;
-    height: auto;
-    display: block;
     
+    display: block;
+    justify-self: right;
 }

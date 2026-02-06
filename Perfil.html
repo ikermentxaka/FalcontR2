@@ -63,67 +63,80 @@
     <main>
 
         <div id="panelperfil">
-            
-            <div id="usuario">
-            <div id="nombre">
-            <h1>Aner Diez</h1> 
-            <hr>
-            </div>
 
-            <div id="usuariobottom">
-            <div #datos>
-            <p>anerdb07@gmail.com</p>
-            <p>634410394</p>
-            <p>Usuario desde: 02/05/2024</p>
+            <div id="usuario">
+                <div id="nombre">
+                    <h1>Aner Diez</h1>
+                    <hr>
+                </div>
+
+                <div id="usuariobottom">
+                    <div #datos>
+
+                        <a href="mailto:anerdatabeisss"><p>anerdb@gmail.com</p></a>
+                        <a href="tel:+34678567876"><p>634410396</p></a>
+                        <p>Usuario desde: 02/05/2024</p>
+                    </div>
+                    <div id="editar">
+                        <a href="">
+                            <p>Editar perfil</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="editar">
-            <a href=""><p>Editar perfil</p></a>
-            </div>
-            </div>
-        </div>
 
             <div id="eventos">
                 <div id="top">
-                <div id="pestanas">
-                    <h2 id="ins">Inscrito</h2>
-                    <h2 id="asis">Asistidos</h2>
+                    <div id="pestanas">
+                        <h2 id="ins">Inscrito</h2>
+                        <h2 id="asis">Asistidos</h2>
+                    </div>
+                    <hr>
+                    <div id="inscritos">
+
+                        <div id="evInscr" class="eventosMostrados">
+                            <p>Bilbao Night Marathon 2026</p>
+                            <hr>
+                            <p>Bilbao Night Marathon</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div id="asistidos">
+                        <!--<h2>Asistidos</h2>-->
+                        <div id="evAsist" class="eventosMostrados">
+                            <div class="evento">
+                                <p>Bilbao Night Marathon 2022</p><img src="src/Calificaciones/Nota4.png" alt="4">
+                            </div>
+                            
+                            <hr>
+                            <p>Bilbao Night Marathon 2021</p>
+                            <hr>
+                            <p>Bilbao Night Marathon 2020</p>
+                            <hr>
+                            <p>Bilbao Night Marathon 2019</p>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
-                <div id="inscritos">
-                    
-                    <div id="evInscr" class="eventosMostrados">
-                    <p>Bilbao Night Marathon 2026</p><hr>
-                    <p>Bilbao Night Marathon</p><hr>
-                </div>
-                </div>
-                <div id="asistidos">
-                    <!--<h2>Asistidos</h2>-->
-                    <div id="evAsist" class="eventosMostrados">
-                    <p>Bilbao Night Marathon 2022</p><hr>
-                    <p>Bilbao Night Marathon 2021</p><hr>
-                    <p>Bilbao Night Marathon 2020</p><hr>
-                    <p>Bilbao Night Marathon 2019</p><hr>
-                </div>
-                </div>
-            </div>
                 <div id="media">
                     <p>Valoración media</p>
                     <img src="src/Calificaciones/Nota4.png" alt="4">
-                    
+
                 </div>
             </div>
         </div>
 
-    </main>     
+    </main>
 
     <footer>
 
         <div class="colaboracion">
             <h2>Colabora con nosotros y sé parte del cambio.</h2>
-                <h3>Juntos hacemos crecer un futuro más verde.</h3>
-                    <div class="btn-colab">
-                        <a class="botones" href="RegistroVoluntarios.html">Únete al voluntariado</a>
-                        <a class="botones" href="TrabajaNosotros.html">Trabaja con nosotros</a>
-                    </div>
+            <h3>Juntos hacemos crecer un futuro más verde.</h3>
+            <div class="btn-colab">
+                <a class="botones" href="RegistroVoluntarios.html">Únete al voluntariado</a>
+                <a class="botones" href="TrabajaNosotros.html">Trabaja con nosotros</a>
+            </div>
         </div>
         <div class="contacto">
             <div class="iconos">
@@ -133,7 +146,8 @@
                 <a href="mailto:correoelectronico@gmail.com" class="icon"><img src="src/gmail.png">
                     <p>voluntariadoverde@gmail.com</p>
                 </a>
-                <a  href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" class="icon"><img src="src/mapa.png">
+                <a href="https://www.google.com/maps/place/cpes+SAN+LUIS+LH+bhip+-+Bachillerato+y+Formaci%C3%B3n+Profesional/@43.2615541,-2.9419887,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e502873b41fd5:0x1ab0ace3022b6ab9!8m2!3d43.2615502!4d-2.9394138!16s%2Fg%2F1wd3xc60?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
+                    class="icon"><img src="src/mapa.png">
                     <p>Licenciado Poza Kalea 31, 48011 Bilbao, Vizcaya</p>
                 </a>
             </div>
@@ -176,30 +190,28 @@
 </html>
 
 <script>
-    
     const botonInscrito = document.getElementById("ins");
     const botonAsistidos = document.getElementById("asis");
     const divEvInscr = document.getElementById("inscritos");
     const divEvAsis = document.getElementById("asistidos");
-    
-    <!--Al inicio-->
-    divEvInscr.style.display ="block";
+
+    <!--Al inicio-- >
+    divEvInscr.style.display = "block";
     divEvAsis.style.display = "none";
     botonInscrito.style.color = "#222222";
     botonAsistidos.style.color = "#EBEEEF"
 
-    botonInscrito.addEventListener("click",() => {
-    divEvInscr.style.display ="block";
-    divEvAsis.style.display = "none";
-    botonInscrito.style.color = "#222222";
-    botonAsistidos.style.color = "#EBEEEF";});
+    botonInscrito.addEventListener("click", () => {
+        divEvInscr.style.display = "block";
+        divEvAsis.style.display = "none";
+        botonInscrito.style.color = "#222222";
+        botonAsistidos.style.color = "#EBEEEF";
+    });
 
-    botonAsistidos.addEventListener("click",() => {
-    divEvAsis.style.display ="block";
-    divEvInscr.style.display = "none";
-    botonInscrito.style.color = "#EBEEEF";
-    botonAsistidos.style.color = "#222222";});
-
-
- 
+    botonAsistidos.addEventListener("click", () => {
+        divEvAsis.style.display = "block";
+        divEvInscr.style.display = "none";
+        botonInscrito.style.color = "#EBEEEF";
+        botonAsistidos.style.color = "#222222";
+    });
 </script>
